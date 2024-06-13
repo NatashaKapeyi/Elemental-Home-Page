@@ -83,18 +83,56 @@ body{
     
 }
 
-.over {
-    position: absolute;
-    bottom: 255px;
-    left: 0px;
-    background-color: #244AC2; 
-    color: white;
-    padding: 31px 115px;
-    font-size: 24px;
-    text-transform: uppercase;
 
+
+.overlay-container {
+    position: absolute;
+    bottom: 20px; /* Adjust as needed */
+    left: 0;
+    width: 100%;
+    text-align: center;
 }
 
+.over {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px;
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    background-color: rgba(36, 74, 194, 0.7); /* Adjust background color and transparency */
+    display: none; /* Initially hide overlay texts */
+}
+
+.over.active {
+       display: block;
+        position: absolute;
+        bottom: 227px;
+        left: 268px;
+        background-color: #244AC2; 
+        color: white;
+        padding: 31px 115px;
+        font-size: 24px;
+        text-transform: uppercase;
+    
+    
+}
+
+.over-black {
+    position: absolute;
+    top: -271px; /* Adjust the vertical position as needed */
+    right: 57px; /* Adjust the horizontal position as needed */
+    transform: translate(50%, -50%);
+    background:black; 
+    color: #000000; 
+    font-size: 24px;
+    padding: 31px 0px;
+    width: 100px; 
+    z-index: 1;
+}
 
 
 
@@ -133,7 +171,7 @@ body{
     background-position: right center;
     top: 50%;
     right: 17px;
-    margin-top: -28px; /* Half of the height to vertically center */
+    margin-top: -35px; /* Half of the height to vertically center */
     cursor: pointer;
 }
 
@@ -202,7 +240,7 @@ body{
 .last-section {
     display: flex;
     justify-content: space-between;
-    padding: 0px 146px;
+    padding: 0px 146px 15px;
     
 }
 
@@ -276,7 +314,7 @@ span{
     color: #1E7BAE;
 }
 .final-section{
-    padding: 0px 155px; ;
+    padding: 0px 155px 15px; ;
 }
 
 /* Responsive styles */

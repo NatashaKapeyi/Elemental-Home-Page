@@ -51,3 +51,37 @@ $(document).ready(function() {
     });
 });
 
+let slideIndex = 0; // Initialize slide index
+
+// Function to show slides and update overlay text
+function showSlides() {
+    let slides = document.getElementsByClassName("mySlides");
+    let overlays = document.getElementsByClassName("over");
+
+    // Hide all slides and overlays
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+        overlays[i].classList.remove("active");
+    }
+
+    // Ensure slideIndex stays within range
+    if (slideIndex < 0) {
+        slideIndex = slides.length - 1;
+    } else if (slideIndex >= slides.length) {
+        slideIndex = 0;
+    }
+
+    // Show current slide and overlay
+    slides[slideIndex].style.display = "block";
+    overlays[slideIndex].classList.add("active");
+}
+
+// Function to handle next/previous slide buttons
+function plusSlides(n) {
+    slideIndex += n;
+    showSlides();
+}
+
+// Initial slide display
+showSlides();
+
