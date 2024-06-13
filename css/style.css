@@ -129,7 +129,7 @@ body{
     background-size: contain;
     background-position: right center;
     top: 50%;
-    right: 0;
+    right: 17px;
     margin-top: -28px; /* Half of the height to vertically center */
     cursor: pointer;
 }
