@@ -107,14 +107,14 @@ body{
     font-size: 24px; /* Larger font size */
     padding: 16px;
     color: white;
-    background: none; /* No background */
+    background: none; 
     border: none;
     user-select: none;
-    display: none; /* Hide the previous arrow */
+    display: none; /* Hides the previous arrow */
 }
 
 .next {
-    display: block; /* Show the next arrow */
+    display: block; /* Shows the next arrow */
 }
 
 .indicators {
@@ -125,15 +125,25 @@ body{
 
 
 .dot {
-    cursor: pointer;
-    height: 13px;
-    width: 13px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
+    background-image: url(https://i.ibb.co/SNHw5WB/dot.png);
+    width: 22px;
+    height: 22px;
     display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 1px;
+    border-radius: 50%;
+    cursor: pointer;
+    transform: rotate(0deg); 
+    transition: transform 0.3s; /* Smooth transition for rotation */
 }
 
-.active, .dot:hover {
-    background-color: #ffffff;
+/* Style for active dots */
+.dot.active {
+    /* Add styles for active dots here */
+    filter: grayscale(100%); /* Example: grayscale to disable */
+    opacity: 0.5; /* Example: reduce opacity */
+    
 }
+
