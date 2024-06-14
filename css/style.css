@@ -204,6 +204,7 @@ body{
     filter: grayscale(100%); /* Example: grayscale to disable */
     opacity: 0.5; /* Example: reduce opacity */
     
+    
 }
 
 .middle-section p{
@@ -318,9 +319,16 @@ span{
 }
 
 /* Responsive styles */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     .container {
-        width: 90%;
+        width: 100%;
+        padding: 50px 76px;
+        
+    }
+
+    .logo img{
+
+        margin-left: 54px;
     }
     .navbar .menu-toggle {
         display: block;
@@ -351,14 +359,105 @@ span{
     .small-box {
         width: 45%;
         margin: 5px 2.5%;
+        
+    }
+    .final-section{
+        padding: 0px 94px;
+    }
+
+    .over.active{
+        bottom: 160px;
+        padding: 31px 43px;
+        left: 180px;
+        font-size: 19px;
     }
 }
 
 @media (max-width: 480px) {
-    .small-box {
+    .final-section{
+        padding: 7px;
+        
+    }
+
+    .container{
         width: 100%;
-        margin: 5px 0;
+        padding:0px;
+    }
+
+    .logo img{
+        margin-left: 0px;
     }
 }
+
+@media(max-width:1002px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .middle-section p {
+        width: 100%;
+    }
+
+    .image img{
+    position: relative;
+    top: 57px;
+    max-width: 90%;
+    }
+    
+    .over-black{
+            top: -206px;
+    right: 47px;
+    }
+}
+
+@media (max-width: 591px) {
+    .over.active{
+        padding: 25px 5px;
+        left: 113px;
+        bottom: 133px;
+        font-size: 15px
+    }
+
+    .over-black{
+        top: -186px;
+        right: -6px;
+        display: none;
+    }
+
+    .next{
+        top:51px;
+        right:-39px
+    }
+
+    .middle-section p{
+        font-size: 17px;
+        line-height: 27px;
+        padding: 36px;
+        width: 101%;
+    }
+
+    .middle-section .text{
+        text-align: start;
+    }
+
+    .menu-toggle{
+        margin-right: 10px;
+    }
+
+    .image img{
+        max-width: 72%;
+        padding-bottom: 29px;
+        position: relative;
+        left: -18px;
+        top: 10px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
 
 /* done */
