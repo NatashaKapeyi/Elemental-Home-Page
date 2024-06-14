@@ -220,7 +220,7 @@ body{
 .container {
     display: flex;
     align-items: center;
-    padding: 50px 163px;
+    padding: 50px 93px;
 }
 .text {
     flex: 2;
@@ -241,7 +241,7 @@ body{
 .last-section {
     display: flex;
     justify-content: space-between;
-    padding: 0px 146px 15px;
+    padding: 0px 83px 15px;
     
 }
 
@@ -315,11 +315,11 @@ span{
     color: #1E7BAE;
 }
 .final-section{
-    padding: 0px 155px 15px; ;
+    padding: 0px 92px 15px; ;
 }
 
 /* Responsive styles */
-@media (max-width: 1000px) {
+@media (max-width: 1004px) {
     .container {
         width: 100%;
         padding: 50px 76px;
@@ -389,12 +389,12 @@ span{
     }
 }
 
-@media(max-width:1002px){
-    .container{
+@media(max-width:1004px){
+    /* .container{
         display: flex;
         flex-direction: column;
         
-    }
+    } */
     .middle-section p {
         width: 100%;
     }
@@ -457,6 +457,7 @@ span{
         flex-direction: column;
     }
 }
+
 
 
 
