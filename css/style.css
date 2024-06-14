@@ -389,12 +389,13 @@ span{
     }
 }
 
+@media(max-width:1240px){
+    .next{
+        margin-top: -14px;
+    }
+}
+
 @media(max-width:1004px){
-    /* .container{
-        display: flex;
-        flex-direction: column;
-        
-    } */
     .middle-section p {
         width: 100%;
     }
@@ -426,7 +427,7 @@ span{
     }
 
     .next{
-        top:51px;
+        top:26px;
         right:-39px
     }
 
