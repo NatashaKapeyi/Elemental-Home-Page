@@ -168,10 +168,10 @@ body{
     background-image: url(https://i.ibb.co/zhPPK5v/slide.png);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: right center;
+    /* background-position: right center; */
     top: 50%;
     right: 17px;
-    margin-top: -35px; /* Half of the height to vertically center */
+    /* margin-top: -35px; */
     cursor: pointer;
 }
 
@@ -211,7 +211,7 @@ body{
     width: 76%;
     color: #061C2C;
     /* display: block; */
-    font-size: 16px;
+    font-size: 18px;
     line-height: 31px;
     font-weight: 300;
     padding: 0px;
@@ -391,9 +391,15 @@ span{
 
 @media(max-width:1240px){
     .next{
-        margin-top: -14px;
+        margin-top: -26px;
     }
 }
+@media (min-width: 1006px) and (max-width: 1261px) {
+    .next {
+        margin-top: -90px;
+    }
+}
+
 
 @media(max-width:1004px){
     .middle-section p {
